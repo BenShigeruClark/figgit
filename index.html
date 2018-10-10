@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Slabo+27px" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+          
+    <title>Figgit Search</title>
+</head>
+
+<body onload="getLocation()">
+    <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+            <div class="modalContent"> 
+                <p>Please Enter a Keyword or Search Phrase</p>
+                <p class="close">&times;</p>
+            </div>
+              
+              </div>
+    <div class="flex-container">
+    <div class="container">
+        <div class="logoDiv"><img src="assets/images/figgit_logo-01.png" alt="logo" class="responsive"></div>
+
+            <form id="searchForm">
+            <div class="formRow">   
+                <div class="formColumn" style="flex-grow: 9">
+                    <label form="headline-input">Enter Keyword</label><br>
+                    <input type="text" id="headlineInput" placeholder="Required">
+                </div>
+
+      
+                 <div class="formColumn" style="flex-grow: 1">
+                    <label form="headline-input">Date of Article</label><br>
+                    <input class="headlineDate" id="date" type="date" placeholder="mm/dd/yyyy">
+                </div>
+                
+                <div class="formColumn" style="flex-grow: 0">
+                    <label form="headline-input"></label><br>
+                    <input id="headlineBtn" type="submit" value="Search">
+                </div>
+            </div> 
+
+            <div class="formRow2">
+                <div id="language">
+                    <label>Source Language:</label>
+                    <select id="languageSelect" name="Language">
+                        <option value="en" selected>English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                        <option value="it">Italian</option>
+                    </select>
+                </div>    
+                <div id="location">Current location:</div>
+            </div>
+            </form>
+            
+    </div>
+    </div>
+    
+    <div id="resultsRow">
+        <div class=resultsHeader><h3>Search Results</h3></div>
+        <div class="resultsContainer">
+        <div id="resultsSection">
+            <div id="searchResult"></div>
+            <div id="dateResult"></div>
+            <div id="resultsView"></div>
+        </div>
+        </div>
+    </div>  
+
+   
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</body>
+
+</html>
