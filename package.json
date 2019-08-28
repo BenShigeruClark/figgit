@@ -1,0 +1,22 @@
+{
+  "name": "figgit",
+  "version": "1.0.0",
+  "description": "With our project we wanted to address a growing online issue, the quest for truth. With fake news taking over our news feed, how do we know what is fact and what is fiction?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenShigeruClark/figgit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenShigeruClark/figgit/issues"
+  },
+  "homepage": "https://github.com/BenShigeruClark/figgit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
